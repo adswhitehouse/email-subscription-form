@@ -55,13 +55,13 @@ select {
 /* Body */
 body {
   font-family: "Istok Web", serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(./images/background.png) no-repeat center center / cover;
-  color: #fff;
 }
 
 /* Container */
 .content-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./images/background.png) no-repeat center center / cover;
+  color: #fff;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -86,13 +86,14 @@ h1 {
 }
 
 /* Input */
-.input-box {
+form {
   display: flex;
   background-color: #fff;
   justify-content: space-between;
+  position: relative;
 }
 
-.input-box input {
+form input {
   border: none;
   outline: none;
   flex-grow: 1;
@@ -100,7 +101,7 @@ h1 {
   min-width: 3rem;
 }
 
-.input-box button {
+form button {
   width: 6rem;
   border: none;
   display: flex;
@@ -111,6 +112,14 @@ h1 {
   font-size: 1.5rem;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+/* Message */
+.message {
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  color: #519b47;
 }
 
 /* Media Query */
