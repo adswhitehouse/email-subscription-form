@@ -10,9 +10,9 @@ form.addEventListener("submit", (e) => {
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       message.textContent = "Thank You For Your Submission";
-      form.reset()
+      form.reset();
       setTimeout(() => {
-        message.textContent = ""
+        message.textContent = "";
       }, 5000);
     })
     .catch((error) => console.error("Error!", error.message));
