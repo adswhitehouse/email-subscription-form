@@ -55,4 +55,79 @@ select {
 /* Body */
 body {
   font-family: "Istok Web", serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./images/background.png) no-repeat center center / cover;
+  color: #fff;
+}
+
+/* Container */
+.content-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-inline: 10%;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.coming-soon {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Input */
+.input-box {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+  min-width: 3rem;
+}
+
+.input-box button {
+  width: 6rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #519b47;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Media Query */
+@media screen and (max-width: 41rem) {
+  .content {
+    text-align: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    gap: 0;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
 }
